@@ -55,8 +55,8 @@ Result when using Rewrap (this plugin):
     We can deduce that:
        2*x = 2*y + 4
 
-As you can see, Rewrap didn't touch any of the lines starting with `x = y + 2`,
-since a change of indentation has been detected.
+As you can see, Rewrap didn't touch any of the lines after the change of
+indentation.
 
 
 # Key Features

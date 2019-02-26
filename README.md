@@ -86,11 +86,13 @@ whitespaces and tabs, so this works with the following comment style:
 
 
 **Remove duplicate whitespaces:** If there are duplicate whitespaces (e.g., two
-consecutive whitespace characters), those will be removed. Those can occur if
-you get paragraph justified with emacs for example,  with uses extra
-whitespace for justification. They also occasionally occur when doing mistakes in
-manually rewrapping a paragraph. None of the built-in function or WrapPlus cleans
-these duplicate whitespaces, although sometimes this is what you may want.
+consecutive whitespace characters), the duplicates will be removed. Those can
+occur if the paragraphs have been rewrapped by emacs for example, which has an
+option to use duplicated whitespaces in order to right-justify the paragraph. Or
+more simply, they can be the results of some mistakes when manually rewrapping a
+paragraph. Neither the built-in function nor WrapPlus cleans these duplicate
+whitespaces (although sometimes, preserving these duplicate whitespaces is what
+you may want).
 
 **Preserve cursor position:** In many situations (not all), the cursor position
 stays where it was before the wrap. Both the built-in function and WrapPlus place
@@ -111,9 +113,8 @@ I personally have the following key bindings:
     { "keys": ["alt+ctrl+q"], "command": "wrap_lines_plus" },
     { "keys": ["alt+shift+q"], "command": "rewrap" },
 
-Which allows me to easily try all of three methods: the built-in rewrap
-functionality, WrapPlus, and Rewrap. There's usually one of the three that does
-what I want.
+Which allow me to easily try all three methods: the built-in rewrap function,
+WrapPlus, and Rewrap. There's usually one of the three that does what I want.
 
 
 # Limitations with C-style comments

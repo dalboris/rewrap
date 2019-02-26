@@ -74,15 +74,15 @@ whitespaces and tabs, so this works with the following comment style:
     # Some multi-line
     # comment
 
-     /*                     <- or Doxygen-style /** or /*!
-      * Some multi-line
-      * comment
-      */
+    /*                     <- or Doxygen-style /** or /*!
+     * Some multi-line
+     * comment
+     */
 
-       /*
-         Some multi-line
-         comment
-        */
+    /*
+      Some multi-line
+      comment
+     */
 
 
 **Remove duplicate whitespaces:** If there are duplicate whitespaces (e.g., two
